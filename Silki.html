@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Tidur Silki</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f8f0ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #5d3a9b;
+            text-align: center;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(93, 58, 155, 0.2);
+            padding: 30px;
+            max-width: 90%;
+            width: 350px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        h1 {
+            margin-top: 0;
+            color: #7d5fff;
+            font-size: 24px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .moon {
+            width: 250px;
+            height: 200px;
+            overflow: hidden;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .signature {
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="moon">
+            <img src="https://i.ibb.co/pB0SsL8J/goodnight.jpg" alt="Gambar romantis untuk Silki sebelum tidur" style="border-radius: 10px; max-width: 100%; height: auto;" />
+        </div>
+        <h1>Selamat Tidur Silki!</h1>
+        <p>Semoga mimpi Alung, Bukan mimpi si indah.<br>
+           Jangan lupa bangunin pagi.<br>
+           Istirahatlah dengan nyaman,<br>
+           dan tetaplah hidup lebih lama.</p>
+        <div class="signature">
+            - Lofyuuuu sengkuuuu
+        </div>
+    </div>
+    
+    <script>
+        // Efek animasi sederhana
+        document.querySelector('.card').addEventListener('click', function() {
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
